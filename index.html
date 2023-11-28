@@ -2,22 +2,96 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Fromulário para Web</title>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+    <h2>Formulário quase sem nenhum tratamento visual</h2>
+    <form action="" method="get">
+        <div>
+            <label for="fnome"> Nome </label>
+            <input type="text" id="fnome" />
+        </div>
 
-  <!--
+        <div>
+            <label for="femail"> Email </label>
+            <input type="email" id="femail" />
+        </div>
+
+        <div>
+            <label for="fsenha"> Senha </label>
+            <input type="password" id="fsenha" />
+        </div>
+
+        <div>
+            <label for="ftelefone"> Telefone </label>
+            <input type="tel" id="ftelefone" />
+        </div>
+
+        <div>
+            <label for="fdata">Data de Aniversário</label>
+            <input type="date" id="fdata" />
+        </div>
+
+        <div>
+            <label for="fcormentario">Comentário (mín. 4.000 c)</label>
+            <textarea id="fcomentario"></textarea>
+        </div>
+
+
+
+        <div>
+            Qual dessas opções você marcaria?
+        </div>
+
+
+        <input type="checkbox" id="Pokemon" name="pokemon" checked />
+        <label for="pokemon">Pokemon</label>
+
+        <input type="checkbox" id="Digimon" name="digimon" />
+        <label for="digimon">Digimon</label>
+
+
+
+
+        <fieldset>
+            <legend>
+                Você gostou da segunda temporada de Loki?
+            </legend>
+
+            <input type="radio" name="optTemp" id="optSim" value="sim" checked />
+            <label for="optSim">Sim</label>
+
+
+            <input type="radio" name="optTemp" id="optNao" value="nao" />
+            <label for="optNao">Não</label>
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar" />
+        </div>
+
+    </form>
+
+    <div>
+        <a href="formulario_v1.html">Formulário com novo tratamento visual, versão 1.</a>
+    </div>
+    <div>
+        <a href="formulario_v2.html">Formulário com novo tratamento visual, versão 2.</a>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
 </html>
